@@ -1,0 +1,29 @@
+#include"stdio.h"
+#include"math.h"
+#define _DATATYPE_ "%d" 
+#define _NEWLINE_ "\n" 
+#define pf(_) printf(_DATATYPE_ _NEWLINE_,_) 
+#define sf(_) scanf(_DATATYPE_,&_) 
+#define forl(i,n) for(int i =1;i<=n;i++)
+#define forr(i,n) for(int i =n;i<=1;i--)
+int main() {
+int length;
+printf("Enter number of elements to be stored in array: ");
+sf(length);
+	int arr[length];
+    forl(i,length){
+        sf(arr[i]);
+	}   
+        
+    printf("Og array: \n");    
+    forl (i,length) {     
+        pf(arr[i]);     
+    }          
+        
+    printf("\nArray in reverse order: ");    
+    //Loop through the array in reverse order    
+    forr (i,length) {     
+        pf(arr[i]);     
+    } 
+	return 0;
+}
